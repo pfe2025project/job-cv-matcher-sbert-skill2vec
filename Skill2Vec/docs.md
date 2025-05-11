@@ -133,6 +133,7 @@ Nous allons entraîner notre modèle sur le dataset **Skill2Vec**, disponible su
 🔗 **Repository GitHub** : [https://github.com/duyet/skill2vec-dataset](https://github.com/duyet/skill2vec-dataset)
 
 
+---
 
 ### 🗂️ Nom
 
@@ -146,12 +147,14 @@ Le repository propose plusieurs versions :
 Ces fichiers représentent des échantillons du dataset complet, utiles pour les phases de prototypage ou de test rapide.
 
 
+---
 
 ### 🌐 Source
 
 - Les données sont collectées à partir de **descriptions de postes** publiées sur [Dice.com](https://www.dice.com), un site d'emploi technique majeur aux États-Unis.
 
 
+---
 
 ### 📦 Taille
 
@@ -159,12 +162,15 @@ Ces fichiers représentent des échantillons du dataset complet, utiles pour les
 - Taille approximative : **5 Go**.
 
 
+---
 
 ### 📝 Format
 
 Chaque ligne du fichier est composée de :
 - Un **identifiant de poste**
 - Une **liste de compétences associées**, séparées par des virgules
+
+---
 
 #### Exemple de ligne :
 
