@@ -256,5 +256,6 @@ score = competence_module.get_similarity_score()
 > ✅ Vous pouvez donc directement utiliser la classe et sa méthode sans avoir à gérer les détails internes de traitement ou d’extraction.
 
 
- Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
+Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
+
 --- 
