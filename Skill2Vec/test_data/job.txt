@@ -1,0 +1,55 @@
+🔍 Position: Full-Stack JavaScript Web Developer (M/F)
+
+📍 Location: Remote / Casablanca
+🕒 Contract Type: Permanent (CDI) | Experience: 2+ years
+📄 Company Description
+
+TechNova is an innovative start-up specializing in SaaS solutions for SMEs. We build collaborative, cloud-based, secure, and scalable tools used by over 200 businesses across Europe.
+🎯 Mission
+
+As a full-stack developer, you will join our tech team to contribute to the development and continuous improvement of our web platforms. You’ll be involved in the entire software development life cycle—from prototyping to production deployment.
+🔧 Required Skills
+
+    Proficiency in modern JavaScript (ES6+), React.js, and Node.js
+
+    Experience with Next.js or another SSR framework
+
+    Strong knowledge of databases: MongoDB, PostgreSQL
+
+    Familiarity with REST APIs & authentication (JWT, OAuth2)
+
+    Proficient in version control tools (Git) and collaborative development (GitHub)
+
+    Experience with Docker, CI/CD pipelines, and unit testing
+
+    Awareness of UX/UI principles and responsive design
+
+✅ Nice-to-Haves
+
+    Experience with TypeScript
+
+    Knowledge of WebSockets or GraphQL
+
+    Interest in DevOps and automation
+
+    Familiarity with caching systems (Redis, Varnish)
+
+🎓 Profile
+
+    Minimum of a Bachelor's degree (Bac+3) in Computer Science or a related field
+
+    Curiosity, autonomy, team spirit, and attention to detail
+
+🎁 Benefits
+
+    Flexible working hours
+
+    100% remote work possible
+
+    Equipment provided
+
+    Ongoing training and access to certifications
+
+📩 How to Apply
+
+Please send your resume, a link to your portfolio or GitHub, and your salary expectations to: jobs@technova.io

@@ -1,0 +1,60 @@
+Mohamed OUABBI
+Full-Stack Web Developer | Digital Transformation
+Email: mohamed.ouabbi@example.com | Phone: +212 6 12 34 56 78
+LinkedIn: linkedin.com/in/mohamedouabbi | GitHub: github.com/mouabbi
+Summary
+
+Passionate full-stack developer with over 2 years of experience in designing, developing, and maintaining modern web applications. Strong expertise in JavaScript, React, Node.js, REST API integration, and managing both relational and NoSQL databases. Interested in cloud solutions, microservices architecture, and continuous improvement.
+Technical Skills
+
+    Languages: HTML5, CSS3, JavaScript (ES6+), TypeScript
+
+    Frontend: React.js, Next.js, Redux, Tailwind CSS
+
+    Backend: Node.js, Express.js, RESTful APIs, Auth (JWT, OAuth2)
+
+    Databases: MongoDB, MySQL, PostgreSQL
+
+    Tools: Git, Docker, Webpack, Postman, Swagger
+
+    DevOps: CI/CD with GitHub Actions, deployment on Vercel, Netlify, and DigitalOcean
+
+Professional Experience
+
+🔹 Full-Stack Web Developer – DevCompany, Casablanca (2022 - 2024)
+
+    Developed a full-featured e-commerce platform (React/Node/MongoDB)
+
+    Integrated payment systems with Stripe & PayPal
+
+    Performance optimization (Lighthouse score > 90)
+
+    Implemented CI/CD pipelines and containerization with Docker
+
+🔹 Web Development Intern – SoftTech, Rabat (2021)
+
+    Built an analytical dashboard using React.js & Chart.js
+
+    Integrated public APIs (weather, COVID stats)
+
+    Wrote unit tests using Jest
+
+Education
+
+🎓 Engineering Degree in Computer Science – ENSA Beni Mellal
+
+    Final Year Project: Intelligent CV Recommendation System using Deep Learning (SBERT + Skill2Vec)
+
+Languages
+
+    Arabic: Native
+
+    French: Fluent
+
+    English: Professional
+
+Certifications
+
+    Meta Front-End Developer (Coursera)
+
+    MongoDB for Developers (MongoDB University)
