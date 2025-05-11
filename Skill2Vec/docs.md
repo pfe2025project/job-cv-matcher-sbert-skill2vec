@@ -1,4 +1,4 @@
-# Pipeline Modèle de Compétence Skill2Vec — Matching CV ↔ Offre
+# 🛠️  Modèle de Compétence Skill2Vec 
 
 Ce module est la **seconde brique** de notre système hybride de matching entre **CV** et **offres d’emploi**.  
 Il s’appuie sur une représentation vectorielle des compétences (`Skill2Vec`) pour calculer une **similarité métier** entre deux documents.
@@ -32,8 +32,8 @@ qui s'appuie sur :
 ```python
 from utils.convert_to_text import convert_to_text
 
-text_cv = convert_to_text("examples/cv_exemple_long.pdf")
-text_job = convert_to_text("examples/offre_exemple_long.docx")
+text_cv = convert_to_text("examples/cv_exemple.pdf")
+text_job = convert_to_text("examples/offre_exemple.docx")
 ```
 > 📌 **Remarque** : Assurez-vous d'avoir installé les dépendances :
 >
@@ -55,12 +55,16 @@ Dans cette étape, nous allons extraire automatiquement les compétences à part
 
 De plus, **SkillNER** est flexible et permet d'utiliser votre propre dataset personnalisé. Vous pouvez intégrer vos propres compétences à la base de données afin de mieux correspondre à vos besoins spécifiques, que ce soit pour un domaine particulier ou une entreprise avec des exigences précises en termes de compétences.
 
+> 🔗 Pour en savoir plus sur **SkillNER**, visitez le site : [https://skillner.vercel.app/](https://skillner.vercel.app/)  
+> 📦 Ou consultez le dépôt GitHub : [https://github.com/AnasAito/SkillNER/](https://github.com/AnasAito/SkillNER/)
+
+
 ### Fonctionnement de l'extraction
 
 La fonction `extract_skills()` définie dans `utils/extract_skills.py` prend en entrée un texte brut (par exemple, le contenu d'un CV ou d'une offre d'emploi) et retourne une liste d'objets représentant les compétences extraites. Chaque objet contient les informations suivantes :
 
 - **skill_name** : le nom de la compétence (ex. `React JS`, `Node JS`)
-- **skill_type** : le type de compétence (ex. `Technical` ou `Soft`)
+- **skill_type** : le type de compétence (ex. `HARD SKILL` ou `SOFT SKILL`)
 - **match_type** : le type de correspondance (ex. `full_matches` pour une correspondance exacte)
 - **score** : la précision de la correspondance (valeur entre 0 et 1)
 
@@ -83,10 +87,10 @@ for skill in skills:
 ```
 ### Exemple de sortie
 
-- **Skill**: node js, **Type**: Technical, **Match Type**: full_matches, **Score**: 1
-- **Skill**: react js, **Type**: Technical, **Match Type**: full_matches, **Score**: 1
-- **Skill**: express js, **Type**: Technical, **Match Type**: full_matches, **Score**: 1
-- **Skill**: e commerce, **Type**: Business, **Match Type**: full_matches, **Score**: 1
+- **Skill**: node js, **Type**: HARD SKILL, **Match Type**: full_matches, **Score**: 1
+- **Skill**: react js, **Type**: HARD SKILL, **Match Type**: full_matches, **Score**: 1
+- **Skill**: express js, **Type**: HARD SKILL, **Match Type**: full_matches, **Score**: 1
+- **Skill**: e commerce, **Type**: HARD SKILL, **Match Type**: N-Gram, **Score**: 1
 
 ---
 
@@ -124,11 +128,11 @@ Skill2Vec est un modèle **Word2Vec spécialisé**, entraîné **non pas sur du 
 
 ### 📊 Jeu de Données : Skill2Vec Dataset
 
-Nous allons entraîner notre modèle sur le dataset **Skill2Vec**, disponible sur [PapersWithCode](https://paperswithcode.com/dataset/skill2vec) et accessible via GitHub :
+Nous allons entraîner notre modèle sur le dataset **Skill2Vec**, disponible sur [https://paperswithcode.com/dataset/skill2vec](https://paperswithcode.com/dataset/skill2vec) et accessible via GitHub :
 
 🔗 **Repository GitHub** : [https://github.com/duyet/skill2vec-dataset](https://github.com/duyet/skill2vec-dataset)
 
----
+
 
 ### 🗂️ Nom
 
@@ -141,20 +145,20 @@ Le repository propose plusieurs versions :
 
 Ces fichiers représentent des échantillons du dataset complet, utiles pour les phases de prototypage ou de test rapide.
 
----
+
 
 ### 🌐 Source
 
 - Les données sont collectées à partir de **descriptions de postes** publiées sur [Dice.com](https://www.dice.com), un site d'emploi technique majeur aux États-Unis.
 
----
+
 
 ### 📦 Taille
 
 - Le jeu de données complet contient **plus de 1,4 million de descriptions de postes**.
 - Taille approximative : **5 Go**.
 
----
+
 
 ### 📝 Format
 
@@ -225,7 +229,26 @@ L’ensemble du processus est implémenté dans le notebook suivant :
 
 ---
 
+# Utilisation de la classe Skill2VecMatching
 
-Nous avons donc structuré l’ensemble dans une classe nommée `Skill2VecMatching`, qui prend en entrée le CV (sous forme de texte ou de chemin), l'offre d'emploi (également sous forme de texte ou de chemin), ainsi qu’un modèle ( skiLL2vec par défaut ) pré-entraîné , et qui fournit un score de similarité entre les compétences extraites. 
+Nous avons encapsulé toute la logique dans une classe appelée `Skill2VecMatching`, qui prend en entrée un CV et une offre d'emploi (sous forme de texte brut ou de chemin de fichier), ainsi qu’un modèle pré-entraîné (par défaut : `skiLL2vec`). 
 
+Une fois instanciée, il suffit simplement d’appeler la méthode `get_similarity_score()` pour obtenir un score de similarité entre les compétences extraites.
+
+### Exemple d’utilisation :
+
+```python
+from Skill2VecMatching import Skill2VecMatching
+
+# Instanciation du module avec les fichiers CV et offre d’emploi
+competence_module = Skill2VecMatching("test_data/cv.txt", "test_data/job.txt")
+
+# Obtention du score de similarité
+score = competence_module.get_similarity_score()
+```
+
+> ✅ Vous pouvez donc directement utiliser la classe et sa méthode sans avoir à gérer les détails internes de traitement ou d’extraction.
+
+
+ Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
 --- 
