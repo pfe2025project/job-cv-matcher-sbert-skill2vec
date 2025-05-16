@@ -244,17 +244,20 @@ Une fois instanciée, il suffit simplement d’appeler la méthode `get_similari
 ### Exemple d’utilisation :
 
 ```python
-from Skill2VecMatching import Skill2VecMatching
+
+from Skill2Vec.Skill2VecMatching import Skill2VecMatching
 
 # Instanciation du module avec les fichiers CV et offre d’emploi
-competence_module = Skill2VecMatching("test_data/cv.txt", "test_data/job.txt")
+competence_model = Skill2VecMatching(model_path=r"models/skill2vec_10k_trained.model")
 
 # Obtention du score de similarité
-score = competence_module.get_similarity_score()
+score = competence_model.get_similarity_score(cv_input="test_data/cv.txt",job_input="test_data/job.txt")
+
 ```
 
 > ✅ Vous pouvez donc directement utiliser la classe et sa méthode sans avoir à gérer les détails internes de traitement ou d’extraction.
 
 
- Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
+Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
+
 --- 
