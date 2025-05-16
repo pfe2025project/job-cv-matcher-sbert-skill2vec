@@ -134,4 +134,12 @@ print(f"Score Final Pondéré : {final_score:.4f}")
 📘 Pour plus d'exemples d'utilisation du modèle, veuillez consulter le notebook [`exemple.ipynb`](exemple.ipynb).
 
 
+
+Nous prévoyons d'intégrer cette **approche hybride de matching sémantique** (basée sur **SBERT** et **Skill2Vec**) dans notre **plateforme de recrutement** afin d'améliorer la pertinence de la mise en relation entre les CV et les offres d'emploi.
+
+➡️ **Les détails techniques et les implémentations complètes seront disponibles prochainement** dans ce dépôt GitHub : [Lien à venir](#)
+
+📌 Restez connectés pour découvrir comment cette méthode permet de combiner la puissance des embeddings contextuels (SBERT) avec la similarité sémantique orientée compétences (Skill2Vec).
+
+Rédigé par : [Mohamed OUABBI](https://github.com/mouabbi)
 --- 
